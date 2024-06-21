@@ -1,0 +1,84 @@
+.container {
+    background-color:lightcoral;
+    background-image: url(/img/bg_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    min-height: 100vh;
+    padding: 50px;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 48px;
+    }
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 5px 5px 8px 1px crimson;
+}
+
+.box_01 {
+    background-color:rgb(196, 229, 241);
+    color: rgb(11, 56, 114);
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.paragraph_one {
+    font-size: 15px;
+    /*margin-bottom: 20px;*/
+}
+
+.quicksand-<uniquifier> {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.head_name {
+    font-size: 250%;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .head_name {
+        font-size: 36px;
+    }
+}
+
+.career {
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: quicksand;
+    font-size: 120%;
+    font-weight: 400;
+    color: rgb(2, 18, 32);
+}
+
+.contact-icon {
+    margin-right: 15px;
+    width: 16px;
+}
+
+.botton {
+    background-color: crimson;
+    color: bisque;
+    max-width: fit-content;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.contact {
+    text-decoration: none;
+}
