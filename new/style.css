@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --black-50: #e8dfec;
+    --white: #fbfaff;
+    --blue: #acdaf1;
+    --red: #fc4865;
+    --purple: #9121ff;
+    --black: #07060a;
+}
+
+*{
+    font-family: "Dosis", sans-serif;
+    /* font-family: "Shantell Sans", cursive; */
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+    background: var(--white);
+    img{
+        width: 250px;
+    }
+}
+
+.box{
+    background: var(--blue);
+    padding: 5px 5px;
+}
+.container{
+    background: #9121ff;
+    padding: 5px 5px;
+    .navbar{
+        background: #fc4865;
+    }
+}
+.box-circle{
+    background: var(--black-50);
+
+}
