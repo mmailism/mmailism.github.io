@@ -37,6 +37,11 @@ body{
     }
 }
 
+a{
+    text-decoration:none; 
+    color: var(--purple);
+}
+
 /* .box{
     background: var(--blue);
 }
@@ -53,9 +58,9 @@ body{
 .header{
     display: block;
     position: relative;
-    font-size: 20px;
+    font-size: 24px;
     box-shadow: var(--box-shadow);
-    padding: 0 30px;
+    padding: 0 25px;
     padding-top: 5%;
     padding-bottom: 3%;
 
