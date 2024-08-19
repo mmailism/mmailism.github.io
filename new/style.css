@@ -9,14 +9,15 @@
     --red: #fc4865;
     --purple: #9121ff;
     --black: #07060a;
+    /* --box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2); */
+    --box-shadow: 1px 5px 15px rgba(0,0,0,.1);
+
 }
 
 *{
     font-family: "Dosis", sans-serif;
-    /* font-family: "Shantell Sans", cursive; */
-    font-family: "Caveat", cursive;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -26,7 +27,7 @@ body{
         width: 250px;
     }
 }
-
+/* 
 .box{
     background: var(--blue);
     padding: 5px 5px;
@@ -41,4 +42,31 @@ body{
 .box-circle{
     background: var(--black-50);
 
+} */
+
+.header{
+    display: block;
+    position: relative;
+    font-size: 20px;
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            font-family: "Caveat", cursive;
+            margin-left: 1%;
+            i{
+                margin-right: 5px;
+            }
+        }
+        .link-page{
+            margin-right: 1%;
+            align-items: center;
+            text-align: center;
+            a{
+                padding-left: 8px;
+            }
+        }
+    }
 }
