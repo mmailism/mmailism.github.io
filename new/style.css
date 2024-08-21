@@ -16,11 +16,12 @@
     --blue: #acdaf1;
     --red: #fc4865;
     --purple: #9121ff;
-    --black: #07060a;
+    --black: #1f131f;
     --pink: #fcdabf;
     --box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    --text-shadow: 12px 15px 0px rgba(255, 73, 97, 0.2);
     --box-shadow-in: 0px 1px 4px rgba(255, 255, 255, 1) inset;
-    --shadow-pic: 3px 2px 3px rgba(0, 0, 0, 0.3);
+    --shadow-pic: 3px 2px 3px rgba(255,255,255, 0.1);
 
 }
 
@@ -38,7 +39,7 @@ html{
 }
 
 body{
-    background: var(--purple);
+    background: var(--red);
     img{
         width: 250px;
     }
@@ -46,11 +47,10 @@ body{
 
 a{
     text-decoration: none; 
-    color: var(--black);
+    color: var(--white);
     
     &:hover{
-        cursor: pointer;;
-        /* color: var(--blue); */
+        cursor: pointer;
     }
 }
 
@@ -91,12 +91,12 @@ a{
         }
         .link-page{
             a{
-                color: var(--white);
+                color: var(--red);
                 white-space: nowrap;
                 border-radius: 4rem;
                 margin: 10px;
                 padding: 5px 15px;
-                background: var(--black);
+                background: var(--pink);
                 display: inline-block;
                 transition: 0.3s ease;
                 font-size: 20px;
@@ -104,8 +104,8 @@ a{
 
                 &:hover{
                     transform: scale(1.1);
-                    color: var(--blue);
-                    background: var(--black);
+                    color: var(--purple);
+                    background: var(--pink);
                     box-shadow: var(--box-shadow);
                 }
             }
@@ -125,9 +125,10 @@ a{
     .container{
         margin-left: 5%;
         background: var(--white);
-        border-radius: 10% 10% 10% 10% / 20% 20% 20% 20% ; 
+        border-radius: 5% 5% 5% 5% / 10% 10% 10% 10% ; 
         margin-right: 5%;
-        height: 400px;
+        max-width: 100%;
+        height: 650px;
         align-content: space-evenly;
         
         .box{
@@ -137,31 +138,94 @@ a{
             align-items: center;
             .head-p1{
                 display: flex;
-                /* background: #acdaf1; */
                 flex-direction: column;
 
                 .home-one{
+                    color: var(--black);
                     margin: 1rem;
-                    font-family: "Oooh Baby", cursive;
+                    font-family: 'Caveat', cursive;
                     font-size: 8rem;
+                    font-weight: 700;
+                    text-shadow: var(--box-shadow-in);
                 }
                 .home-two{
+                    color: var(--purple);
+                    text-shadow: var(--text-shadow);
                     margin: 1rem;
                     font-size: 2rem;
                     font-family: "Nothing You Could Do", cursive;
-                    font-weight: 600;
+                    font-weight: 800;
                 }
             }
-            img{
-                /* align-items: center; */
+            .images{
                 margin-right: 1rem;
-                width: 200px;
-                /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); */
-                border-radius: 50%;
+
+                img{
+                    width: 23%;
+                    right: 10%;
+                    top: -55%;
+                    position: absolute;
+                    border : solid var(--white);
+                    border-radius: 50%;
+                    border-width: 10px;
+                    box-shadow: var(--box-shadow);
+                }
             }
+            
             h1{
                 font-size: 100px;
             }
+        }
+        .box-circle{
+            
+                font-size: 1rem;
+                display: flex;
+                flex-direction: column;
+                .dl-btn-t{
+                    display: flex;
+                    justify-content: end;
+                    text-align: end;
+
+                    a{
+                        top: 70%;
+                        right: 3.5%;
+                        width: 10%;
+                        color: var(--purple);
+                        position: absolute;
+                        border-radius: 4rem 0rem 0rem 4rem;
+                        padding: 10px 30px;
+                        background: var(--white);
+                        display: inline-block;
+                        transition: 0.3s ease;
+                        font-size: 3rem;
+                        border: 25px solid var(--red);
+                        /* border-bottom: 0%; */
+                    }
+                }
+                .dl-btn-b{
+                    display: flex;
+                    justify-content: end;
+                    text-align: end;
+
+                    a{
+                        color: var(--purple);
+                        top: 82%;
+                        right: 3.5%;
+                        width: 13%;
+                        position: absolute;
+                        white-space: nowrap;
+                        border-radius: 4rem 0rem 0rem 4rem;
+                        padding: 10px 50px 10px;
+                        background: var(--white);
+                        display: inline-block;
+                        transition: 0.3s ease;
+                        font-size: 3rem;
+                        border: 25px solid var(--red);
+                        i{
+                            margin-right: 5%
+                        }
+                    }
+                }
         }
     }
 }
