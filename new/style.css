@@ -187,9 +187,9 @@ a{
                     text-align: end;
 
                     a{
-                        top: 70%;
+                        top: 68%;
                         right: 3.5%;
-                        width: 10%;
+                        width: auto;
                         color: var(--purple);
                         position: absolute;
                         border-radius: 4rem 0rem 0rem 4rem;
@@ -198,8 +198,8 @@ a{
                         display: inline-block;
                         transition: 0.3s ease;
                         font-size: 3rem;
-                        border: 25px solid var(--red);
-                        /* border-bottom: 0%; */
+                        border: 20px solid var(--red);
+                        /* border-botto: 0; */
                     }
                 }
                 .dl-btn-b{
@@ -209,18 +209,19 @@ a{
 
                     a{
                         color: var(--purple);
-                        top: 82%;
+                        top: 75%;
                         right: 3.5%;
-                        width: 13%;
+                        /* width: 15%; */
                         position: absolute;
-                        white-space: nowrap;
+                        text-align: right;
+                        white-space: pre;
                         border-radius: 4rem 0rem 0rem 4rem;
-                        padding: 10px 50px 10px;
+                        padding: 5px 5px 5px 40px;
                         background: var(--white);
-                        display: inline-block;
+                        /* display: inline-block; */
                         transition: 0.3s ease;
                         font-size: 3rem;
-                        border: 25px solid var(--red);
+                        border: 20px solid var(--red);
                         i{
                             margin-right: 5%
                         }
