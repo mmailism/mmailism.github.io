@@ -39,12 +39,61 @@ html{
 }
 
 body{
-    /* background: var(-); */
+    background: var(--white);
+    background: linear-gradient(107deg, rgba(255,182,208,0.7231267507002801) 0%, rgba(171,217,255,1) 100%);
+    height: 100vh;
+
     img{
         width: 250px;
     }
 }
 
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header{
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+
+        .box{
+            background-color: red;
+            margin: 4rem;
+            width: fit-content;
+
+            .logo{
+                font-size: 2rem;
+
+                a{
+                    font-family: "Caveat", cursive;
+                    i{
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            .link-page{
+                font-size: 2rem;
+                gap: 90px;
+
+                a{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
 .home{
-    background: url(/img-using/Asset\ 1.png);
+    .images{
+        position: absolute;
+        top: 12rem;
+        right: 0;
+        z-index: -1;
+
+        img{
+            width: 800px;
+        }
+    }
 }
